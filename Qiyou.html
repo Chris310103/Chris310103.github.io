@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qiyou Wu (Chris) - Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --section-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { margin: 10px 0 0; font-size: 1.1rem; }
+        .contact-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            border-bottom: 1px dotted white;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: var(--section-bg);
+            margin-bottom: 20px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .item { margin-bottom: 20px; }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        .item-header h3 { margin: 0; font-size: 1.2rem; }
+        .date { color: #666; font-size: 0.9rem; }
+        .subtitle { font-style: italic; color: #555; margin-bottom: 10px; }
+        ul { margin-top: 5px; padding-left: 20px; }
+        .skills-list span {
+            display: inline-block;
+            background: #e9ecef;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            margin: 0 5px 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Qiyou Wu (Chris)</h1>
+    <p>Boston, MA 02215</p>
+    <div class="contact-links">
+        <a href="mailto:wu.qiyou@northeastern.edu">wu.qiyou@northeastern.edu</a> | 
+        <a href="https://linkedin.com/in/qiyou-wu-neu" target="_blank">LinkedIn</a>
+    </div>
+</header>
+
+<div class="container">
+    
+    <section>
+        <h2>Education</h2>
+        <div class="item">
+            <div class="item-header">
+                <h3>Northeastern University</h3>
+                <span class="date">Aug 2025 - May 2027</span>
+            </div>
+            <div class="subtitle">M.S. in Artificial Intelligence | Boston, MA</div>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <h3>Northeast Forestry University & Aston University (Joint Program)</h3>
+                <span class="date">Sep 2021 - Jun 2025</span>
+            </div>
+            <div class="subtitle">B.S. in Construction Management / Construction Project Management | China / UK</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-list">
+            <span>Python</span><span>C++ (C++17)</span><span>SQL</span>
+            <span>PyTorch</span><span>NumPy</span><span>SQLite</span>
+            <span>Git</span><span>HTML/JavaScript</span><span>D3.js</span>
+            <span>BeautifulSoup</span><span>urllib</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Selected Projects</h2>
+        <div class="item">
+            <div class="item-header">
+                <h3>Gomoku AI (Qt6)</h3>
+                <span class="date">Sep 2025 - Dec 2025</span>
+            </div>
+            <div class="subtitle">Minimax/Alpha-Beta Baseline + RL Policy Network</div>
+            <ul>
+                <li>Built a Qt6/C++ Gomoku game and connected Python AI engines via JSON stdin/stdout for real-time Human-AI and AI-AI play.</li>
+                <li>Implemented minimax + alpha-beta with heuristic threat evaluation and transposition table / Zobrist hashing.</li>
+                <li>Trained a PyTorch CNN policy model from self-play logs and compared behavior against the search baseline.</li>
+            </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <h3>Geocoding System</h3>
+                <span class="date">Dec 2024 - May 2025</span>
+            </div>
+            <div class="subtitle">Python + SQLite pipeline integrating Google Maps API</div>
+            <ul>
+                <li>Automated address-to-geodata conversion by integrating Google Maps API; persisted outputs in SQLite.</li>
+                <li>Implemented TLS/SSL certificate verification and API-key handling; visualized coordinates on an HTML/JavaScript web page.</li>
+            </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <h3>Web Crawler + PageRank</h3>
+                <span class="date">Dec 2024 - May 2025</span>
+            </div>
+            <div class="subtitle">Crawl, analyze, and visualize web graphs</div>
+            <ul>
+                <li>Crawled pages via urllib, parsed HTML with BeautifulSoup, and stored graphs in SQLite for reproducible analysis.</li>
+                <li>Implemented iterative PageRank and visualized top pages as an interactive D3.js force-directed graph.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Research & Work Experience</h2>
+        <div class="item">
+            <div class="item-header">
+                <h3>First-author Publication: Computer Communications</h3>
+                <span class="date">Accepted Apr 2024</span>
+            </div>
+            <div class="subtitle">"Enhancement of Edge-Based Surveillance Videos Based on Bilateral Filtering" (DOI: 10.1016/j.comcom.2024.01.031)</div>
+            <ul>
+                <li>Built a frame-level enhancement approach combining bilateral filtering with edge-deployment considerations.</li>
+                <li>Designed experiments on a 565-image dataset; evaluated with GoogLeNet and AlexNet baselines, observing improved visual quality and classification accuracy.</li>
+            </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <h3>Guangdong Tengyun Information Technology Co., Ltd.</h3>
+                <span class="date">Jul 2025 - Aug 2025</span>
+            </div>
+            <div class="subtitle">Researcher & Technical Consultant | Foshan, China</div>
+            <ul>
+                <li>Built a Python + SQLite monitoring tool to track rolling 12-month sales and trigger alerts near a 5M RMB tax threshold.</li>
+                <li>Implemented a practical pipeline from CSV/Excel exports to normalized SQLite tables with validation and deduplication.</li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
